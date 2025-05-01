@@ -1,0 +1,46 @@
+.slider_Manga_Reader{}
+.slider_Manga_Reader .box_item{position:relative;overflow:hidden;background:#20152d;padding-bottom:35%}
+.slider_Manga_Reader .box_item .bg_item{position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;opacity:.4}
+.slider_Manga_Reader .box_item .bg_item img{position:absolute;object-fit:cover;width:120%;height:120%;top:-10%;left:-10%;opacity:1;filter:blur(4px)}
+.slider_Manga_Reader .box_item .poster_item{position:absolute;top:-130px;left:650px;width:400px;transform:scale(1.2)}
+.swiper-fade .swiper-slide-active .poster_item{top:-100px;transform:scale(1)}
+.slider_Manga_Reader .box_item .poster_item a{display:inline-block;transform:rotate(15deg);border:20px solid #fff;box-shadow:0 30px 30px rgba(0,0,0,.2);width:100%;padding-bottom:148%;position:relative;overflow:hidden;background:#eee}
+.slider_Manga_Reader .box_item .poster_item img{position:absolute;width:100%;height:100%;object-fit:cover;top:0;left:0;right:0;bottom:0}
+.slider_Manga_Reader .box_item .content_item{max-width:600px;width:100%;position:absolute;top:50%;transform:translateY(-50%);left:30px;z-index:3;color:#fff;padding:0 30px}
+.slider_Manga_Reader .box_item .content_item .content_item_chapter{font-size:18px;line-height:1.3em;font-weight:600;margin-bottom:5px}
+.slider_Manga_Reader .box_item .content_item .content_item_title{font-size:32px;line-height:1.3;font-weight:600;margin-bottom:15px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.slider_Manga_Reader .box_item .content_item .content_item_title a{color:#fff}
+.slider_Manga_Reader .box_item .content_item .content_item_details{font-size:1em;display:block;font-weight:400;margin-bottom:30px}
+.slider_Manga_Reader .box_item .content_item .content_item_details > *{margin-bottom:1em;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.slider_Manga_Reader .box_item .content_item .content_item_details .content_item_details_genre span{display:inline-block;margin:0 3px 6px 0;border:1px solid rgba(255,255,255,.5);padding:.3rem .5rem;line-height:1;border-radius:.2rem;font-size:.8em}
+.slider_Manga_Reader .box_item .content_item .content_item_buttons > *{display:inline-block;background:#fff;color:#111;font-weight:500;font-size:14px;line-height:40px;padding:0 20px;border-radius:4px}
+.slider_Manga_Reader .box_item .content_item .content_item_buttons .content_item_buttons_read{background:#ffd702}
+.boox_bt{position:absolute;bottom:40px;z-index:1;right:40px}
+.swiper-button{display:flex;align-items:center;justify-content:center;background:#fff;color:#111;width:40px;height:40px;line-height:40px;border-radius:50%;font-size:16px;text-align:center;margin:0 5px;float:right;cursor:pointer}
+.swiper-button svg{display:block;width:20px;height:20px}
+
+@media only screen and (max-width: 900px) {
+  .slider_Manga_Reader .box_item .content_item .content_item_details .content_item_details_genre{display:none}
+  .slider_Manga_Reader .box_item .content_item{max-width:460px}
+  .slider_Manga_Reader .box_item .poster_item{left:460px;transform:scale(1);top:-130px}
+  .swiper-fade .swiper-slide-active .poster_item{transform:scale(1);top:-130px}
+}
+@media only screen and (max-width: 768px) {
+  .slider_Manga_Reader .box_item .poster_item{left:400px}
+  .slider_Manga_Reader .box_item .content_item{max-width:400px}
+  .slider_Manga_Reader .box_item .content_item .content_item_details{display:none}
+}
+@media only screen and (max-width: 540px) {
+  .slider_Manga_Reader .box_item{padding-bottom:50%}
+  .slider_Manga_Reader .box_item .content_item .content_item_title{font-size:17px;margin-bottom:.75rem}
+  .slider_Manga_Reader .box_item .content_item .content_item_chapter{font-size:12px;}
+  .slider_Manga_Reader .box_item .content_item .content_item_buttons > *{margin-top:5px;min-width:83px;line-height:30px;padding:0 10px;font-size:12px;text-align:center}
+  .slider_Manga_Reader .box_item .poster_item a{border:10px solid #fff}
+  .slider_Manga_Reader .box_item .content_item{max-width:250px;left:0}
+  .slider_Manga_Reader .box_item .poster_item{width:210px;right:auto;left:200px;top:-35px!important;transform:scale(1)}
+  .swiper-fade .swiper-slide-active .poster_item{top:-35px!important;transform:scale(1)}
+}
+@media only screen and (max-width: 320px) {
+  .slider_Manga_Reader .box_item .poster_item{left:160px}
+  .slider_Manga_Reader .box_item .content_item{max-width:200px}
+}

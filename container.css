@@ -1,0 +1,247 @@
+/* Container Utama */
+        .container-wrapper {
+            display: flex;
+            margin: auto;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Main Container */
+        .main-container {
+            flex: 3;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-mode .main-container {
+        }
+
+        /* Sidebar */
+        .sidebar-container {
+            flex: 1;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-mode .sidebar-container {
+            background-color: #444;
+        }
+        /* Container untuk Kategori */
+        .section-container {
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 2px;
+            padding: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+        .section-desc {
+            margin: 10px;
+            display: -webkit-box;
+    -webkit-line-clamp: 2; /* Maksimal 2 baris */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3em; /* Sesuaikan tinggi agar sesuai dengan 2 baris */
+    font-size: 14px; /* Ukuran font bisa disesuaikan */
+        }
+
+        .dark-mode .section-title {
+            border-bottom: 2px solid #666;
+        }
+        .col {
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+        .card {
+            background-color: white;
+            color: black;
+        }
+        .dark-mode .card {
+            background-color: #333;
+            color: white;
+        }
+        .col:hover {
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 992px) {
+            .container-wrapper {
+                flex-direction: column;
+                padding: 0px;
+            }
+            
+            .section-container {
+                max-width: 100%;
+                border-radius: 0px;
+            }
+
+            .sidebar-container {
+                max-width: 100%;
+                border-radius: 0px;
+            }
+            .section-desc {
+            font-size: 12px;
+        }
+        }
+.neededform input {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.neededform button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.neededform button:hover {
+    background-color: #0056b3; 
+}
+.popular-anime {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.popular-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popular-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.dark-mode .popular-item {
+    background-color: #5c5c5c;
+}
+
+
+.popular-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+.dark-mode .popular-link {
+    color: white;
+}
+
+
+.popular-img {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.popular-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.popular-info h4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Maksimal 2 baris */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3em; /* Sesuaikan tinggi agar sesuai dengan 2 baris */
+    font-size: 14px; /* Ukuran font bisa disesuaikan */
+}
+
+
+.genres {
+    font-size: 12px;
+    color: black;
+}
+.dark-mode .genres {
+    color: white;
+}
+
+.score {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.rank {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background: #6400ff;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 3px;
+}
+.dark-mode .rank {
+    color: white;
+}
+.list-group-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #fff; /* Default mode terang */
+    color: #333;
+}
+.report-content {
+    flex: 1;
+}
+
+.report-content p {
+    margin: 4px 0 0;
+    font-size: 13px;
+}
+
+.comment-text {
+    color: black;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 2px 6px;
+}
+
+/* DARK MODE SUPPORT */
+.dark-mode .list-group-item {
+    background-color: #5c5c5c; /* Warna gelap */
+    color: #ddd;
+    border: 1px solid #444;
+}
+.dark-mode .report-content a {
+    color: #4da6ff; /* Warna link di dark mode */
+}
+
+.dark-mode .comment-text {
+    color: white;
+}
